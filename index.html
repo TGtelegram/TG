@@ -7,7 +7,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
 <meta name="renderer" content="webkit" />
 <meta name="force-rendering" content="webkit" />
-<title>404</title>
+<title>ComingSoon</title>
 <style>
 body,
 h1,
@@ -85,7 +85,7 @@ color: #2e69c2;
 <style>
 body {
 /* cc(GBK99A) */
-background: #fff;
+background: #1F232E;
 }
 html[data-theme="dark"] body {
 background: #1a1a1a;
@@ -93,7 +93,7 @@ background: #1a1a1a;
 .ErrorPage-container {
 display: flex;
 justify-content: center;
-margin-top: 180px;
+margin-top: 380px;
 }
 @media (max-width: 690px) {
 .ErrorPage-container {
@@ -105,7 +105,7 @@ margin-top: 60px;
 .ErrorPage-title,
 .ErrorPage-subtitle {
 /* cc(GBK04A) */
-color: #646464;
+color: #515D6B;
 line-height: 1.4;
 }
 html[data-theme="dark"] .ErrorPage-title,
@@ -196,22 +196,95 @@ width: 250px;
 margin-left: 0;
 }
 }
+.loading {
+    font-size: 84px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    color: #515D6B;
+}
+.loading span {
+    display: inline-block;
+    margin: 0 -.05em;
+}
+@media (max-width: 690px) {
+.loading {
+margin-top: 100px;
+margin-left: 20px;
+margin-right: 20px;
+font-size: 55px;
+}
+}
+/* code #1 */
+
+.loading01 span {
+    animation: loading01 2.2s infinite alternate;
+}
+.loading01 span:nth-child(1) {
+    animation-delay: 0s;
+}
+.loading01 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.loading01 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.loading01 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.loading01 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.loading01 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.loading01 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.loading01 span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+.loading01 span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+.loading01 span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+.loading01 span:nth-child(11) {
+    animation-delay: 1.0s;
+}
+@keyframes loading01 {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 </style>
 </head>
 <body>
 <div class="ErrorPage">
 <div class="ErrorPage-container">
 <div class="ErrorPage-text">
-<h1 class="ErrorPage-title">404</h1>
+<!--<h1 class="ErrorPage-title">Coming Soon</h1>-->
+<div class="loading loading01">
+        <span>C</span>
+        <span>O</span>
+        <span>M</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span> </span>
+        <span>S</span>
+        <span>O</span>
+        <span>O</span>
+        <span>N</span>
+    </div>
 <p class="ErrorPage-subtitle"></p>
 </div>
 </div>
 <div class="ErrorPage-errorImageContainer">
-<img
-class="ErrorPage-errorImage"
-src="./liukanshan_wire.svg"
-alt="page error"
-/>
 </div>
 </div>
 </div>
